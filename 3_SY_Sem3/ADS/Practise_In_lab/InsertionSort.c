@@ -12,8 +12,11 @@ void InsertionSort(int a[], int n){
         int key = a[i];
         for(int j=i-1; j>=0; j--){
             if(key < a[j]){
-                int temp = key;
-                key = a[j];
+                // int temp = key;
+                // key = a[j];
+                // a[j] = temp;
+                 int temp = a[j+1];
+                a[j+1] = a[j];
                 a[j] = temp;
             }
         }
