@@ -1,6 +1,0 @@
-//Quick Sort
-
-
-int main(){
-
-}
