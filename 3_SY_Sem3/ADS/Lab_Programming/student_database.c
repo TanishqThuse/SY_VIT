@@ -6,84 +6,104 @@ struct Student {
     char name[100];
     int roll;
     float CPI;
+    struct Student* next;
 };
 
-// Function to check for duplicate roll numbers and return a valid one
-int checkRollNo(struct Student students[], int index) {
-    int r;
+int checkRollNo(struct Student* head, int roll) {
+    struct Student* current = head;
+    while (current != NULL) {
+        if (current->roll == roll) {
+            return 0;
+        }
+        current = current->next;
+    }
+    return 1;
+}
+
+struct Student* createStudentNode(char* name, int roll, float CPI) {
+    struct Student* newStudent = (struct Student*)malloc(sizeof(struct Student));
+    strcpy(newStudent->name, name);
+    newStudent->roll = roll;
+    newStudent->CPI = CPI;
+    newStudent->next = NULL;
+    return newStudent;
+}
+
+void addStudent(struct Student** head) {
+    char name[100];
+    int roll;
+    float CPI;
+
+    printf("Enter name :\n");
+    scanf("%s", name);
+    
     while (1) {
         printf("Enter roll number :\n");
-        scanf("%d", &r);
-        int duplicate = 0;
-        for (int i = 0; i < index; i++) {
-            if (students[i].roll == r) {
-                printf("Roll number already exists. Please enter a different roll number\n");
-                duplicate = 1;
-                break;
-            }
-        }
-        if (!duplicate) {
-            return r;
-        }
-    }
-}
-
-// Function to add a student
-void addStudent(struct Student students[], int index) {
-    printf("Enter name :\n");
-    scanf("%s", students[index].name);
-    students[index].roll = checkRollNo(students, index);
-    printf("Enter CPI :\n");
-    scanf("%f", &students[index].CPI);
-}
-
-// Function to delete a student by roll number
-int deleteStudent(struct Student students[], int index) {
-    printf("Enter roll no. of student to delete\n");
-    int r;
-    scanf("%d", &r);
-    int found = 0;
-    for (int i = 0; i < index; i++) {
-        if (students[i].roll == r) {
-            found = 1;
-            for (int j = i; j < index - 1; j++) {
-                students[j] = students[j + 1];
-            }
-            index--;
+        scanf("%d", &roll);
+        if (checkRollNo(*head, roll)) {
             break;
+        } else {
+            printf("Roll number already exists. Please enter a different roll number\n");
         }
     }
-    if (!found) {
+    
+    printf("Enter CPI :\n");
+    scanf("%f", &CPI);
+
+    struct Student* newStudent = createStudentNode(name, roll, CPI);
+    newStudent->next = *head;
+    *head = newStudent;
+}
+
+void deleteStudent(struct Student** head) {
+    int roll;
+    printf("Enter roll no. of student to delete\n");
+    scanf("%d", &roll);
+
+    struct Student* current = *head;
+    struct Student* previous = NULL;
+
+    while (current != NULL && current->roll != roll) {
+        previous = current;
+        current = current->next;
+    }
+
+    if (current == NULL) {
         printf("Roll number not found\n");
+        return;
     }
-    return index;
+
+    if (previous == NULL) {
+        *head = current->next;
+    } else {
+        previous->next = current->next;
+    }
+    free(current);
 }
 
-// Function to display all students
-void displayStudents(struct Student students[], int index) {
-    for (int i = 0; i < index; i++) {
-        printf("Name of student : %s\n", students[i].name);
-        printf("Roll number of student : %d\n", students[i].roll);
-        printf("CPI of student : %f\n", students[i].CPI);
+void displayStudents(struct Student* head) {
+    struct Student* current = head;
+    while (current != NULL) {
+        printf("Name of student : %s\n", current->name);
+        printf("Roll number of student : %d\n", current->roll);
+        printf("CPI of student : %f\n", current->CPI);
         printf("\n");
+        current = current->next;
     }
 }
 
-int createDataBase(struct Student students[]){
-    int index=0;
-    int n ;
+void createDataBase(struct Student** head) {
+    int n;
     printf("Enter number of students\n");
-    scanf("%d", &n);   
-    for(int i=0; i<n; i++){
-        addStudent(students, index++);
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        addStudent(head);
     }
-    return index;
 }
 
 int main() {
-    int index = 0;
+    struct Student* head = NULL;
     int flag = 0;
-    struct Student students[50];
 
     while (1) {
         printf("Enter your choice : \n");
@@ -97,18 +117,16 @@ int main() {
         scanf("%d", &choice);
         switch (choice) {
         case 0:
-            index = createDataBase(students);
+            createDataBase(&head);
             break;
-        
         case 1:
-            addStudent(students, index);
-            index++;
+            addStudent(&head);
             break;
         case 2:
-            index = deleteStudent(students, index);
+            deleteStudent(&head);
             break;
         case 3:
-            displayStudents(students, index);
+            displayStudents(head);
             break;
         case 4:
             flag = 1;
@@ -121,6 +139,13 @@ int main() {
         if (flag) {
             break;
         }
+    }
+
+    struct Student* current = head;
+    while (current != NULL) {
+        struct Student* next = current->next;
+        free(current);
+        current = next;
     }
 
     return 0;

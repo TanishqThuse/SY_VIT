@@ -1,0 +1,16 @@
+﻿LITERATURE REVIEW
+
+[1] “Graph based navigation system” : This paper presents the development of a web-based navigation application for SRMIST Chennai campus, leveraging GPS, compass, and accelerometer technologies. It integrates campus floor plans and uses the Open Street Map API for precise navigation. Developed with an agile approach, the app helps users find campus locations and engage with the community through real-time updates and discussions.
+
+[2] “Map Matching Algorithm: Trajectory and Sequential Map Analysis on Road Network” : GPS tracking data is vital for systems like traffic assessment, routing, and fleet management. However, GPS accuracy can be compromised by weak signals and obstacles, especially in India. Map matching improves road data accuracy by minimizing Frechet distance. This work focuses on enhancing pathfinding by locating Frechet distance in free space, addressing trajectory data errors, and improving road network mapping with sequential computation.
+
+[3] “Map Matching Algorithm: Trajectory and Sequential Map Analysis on Road Network” : GPS tracking data is crucial for systems like traffic assessment, routing, and fleet management. However, GPS accuracy can be affected by weak signals, weather, and obstacles, especially in India. Map matching improves road data accuracy by minimizing Frechet distance, essential for better pathfinding. This work focuses on locating Frechet distance in free space, estimating trajectory errors, and enhancing road network mapping with sequential computation.
+
+[4] “A Comparative Study on Shortest Path Visualization using Artificial Intelligence”  : This study presents a GUI-based tool for finding the shortest path using Dijkstra and A* algorithms, developed with Java AWT and SWING. The tool visualizes the results and stores output in a database. Comparative analysis showed that A* is more efficient and faster than Dijkstra in pathfinding. This research highlights the tool's potential applications in gaming, robotics, logistics, and crowd simulation.
+
+
+[5] : “Advanced traveler information system for Hyderabad City” : This paper presents a GIS-based Advanced Traveler Information System (ATIS) for Hyderabad City, India, developed using ArcView GIS. The system offers comprehensive travel-related information, including road networks, hospitals, offices, and tourist spots, aiding in route selection and trip planning. The user-friendly ATIS can be utilized in public transport hubs and personal computers to assist travelers.
+
+[6] : “The Algorithms Behind The Working Of Google Maps” : Google Maps, launched in 2005, has grown into a widely-used service with over a billion monthly users. Built with C++, JavaScript, XML, and Ajax, the app uses Dijkstra's and A* algorithms to find the shortest path between two points. These graph-based algorithms optimize route calculations, with Dijkstra's being a well-known greedy algorithm for finding the shortest paths in a graph.
+
+

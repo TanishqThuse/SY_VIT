@@ -1,0 +1,24 @@
+Var successful: boolean;
+repeat
+     successful:= false;
+     while (not successful)
+
+     if both forks are available then
+     lift the forks one at a time;
+     successful:= true;
+
+    if successful = false
+    then
+    block(Pi);
+    {eat}
+
+    put down both forks;
+
+    if left neighbor is waiting for his right fork
+    then
+    activate (left neighbor);
+    if right neighbor is waiting for his left fork
+    then
+    activate( right neighbor);
+   {think}
+forever
