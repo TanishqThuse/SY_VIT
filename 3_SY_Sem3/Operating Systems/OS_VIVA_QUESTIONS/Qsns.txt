@@ -1,0 +1,169 @@
+Q1. What is an Operating System?
+Answer: An Operating System is an interface between computer hardware and computer users. It performs tasks like memory management, file management, process management, controlling peripheral devices such as disk drives and printers, and handling input and output.
+
+Example: Linux Operating System, Windows Operating System, etc.
+
+Q2. List some of the standard services by OS?
+Answer: Some of the standard services by OS are :
+
+User interface
+
+Program execution
+
+I/O operations
+
+File-system manipulation
+
+Communications
+
+Error detection
+
+Resource allocation
+
+Accounting
+
+Protection and security
+
+Q3. What is the operating system’s primary purpose?
+Answer: There are two primary purposes of an operating system(OS):
+
+It is designed to make sure that a computer system performs well by managing its computational activities.
+
+It provides an environment for the development and execution of programs.
+**
+**Q4. Name some of the crucial functions of an operating system. **
+Answer:
+
+Memory Management
+
+Processor Management
+
+Device Management
+
+File Management
+
+Security
+
+Control over system performance
+
+Job accounting
+
+Error detecting aids
+
+Coordination between other software and users
+
+**Q5. What are the different operating systems?
+**Answer:
+
+Batched operating systems
+
+Distributed operating systems
+
+Time-Sharing operating systems
+
+Multiprogrammed operating systems.
+
+Real-time operating systems
+
+Q6. What is a socket in OS?
+Answer: A socket is a software construct that allows two applications to communicate over a network. It is one endpoint of a two-way communication link. The other endpoint is another socket. The two sockets are identified by their IP addresses and port numbers. When two sockets connect, they create a socket connection. This connection allows the two applications to exchange data.
+
+Q7. Explain various activities/ functions of OS?
+Answer:
+
+Memory Management
+
+It refers to the management of Main Memory or Primary Memory, an extensive array of words, each having its address.
+
+Main memory provides fast storage that can be accessed directly by the CPU.
+
+Some of its activities are:
+
+It keeps track of the main memory, i.e., what part is in use by whom and what part is not in use.
+
+When a process requests, it allocates the memory to it.
+
+When a process no longer needs the memory, it de-allocates the memory.
+
+Processor Management
+
+It helps the OS to decide which process gets the processor when and for how much time.
+
+Some of its activities are:
+
+It keeps track of the processor and status of the process.
+
+When a process requests, it allocates the processor (CPU) to it.
+
+When a process no longer needs the processor, it de-allocates it.
+
+Device Management
+
+An OS manages device communication via their respective drivers.
+
+Some of its activities are:
+
+It keeps track of all devices.
+
+Efficiently allocates the device.
+
+De-allocates devices.
+
+File Management
+
+A file system is usually organized into directories for easy navigation and usage. These directories may contain files and other directories.
+
+Some of its activities are:
+
+It keeps track of location, information, uses, status, etc. The collective facilities are often known as the file system.
+
+Decides who gets the resources.
+
+Allocates the resources.
+
+De-allocates the resources.
+
+Security − It prevents unauthorized access to programs and data.
+
+Control over system performance − It records delays between the request for a service and the response from the operating system.
+
+Job accounting − It keeps track of resources and time used by various users and jobs.
+
+Error detecting aids − It helps in detecting the production of dumps, traces, error messages, and other debugging and error detecting aids.
+
+Coordination between other software and users − It coordinates and assigns compilers, assemblers, interpreters, and other software to the multiple users of the computer systems.
+
+Q8.What is the Batch Operating System?
+Answer:
+
+It doesn’t interact with the computer directly. There is an operator which takes similar jobs having the exact requirement and groups them into batches.
+
+It is the responsibility of the operator to sort the jobs with similar needs.
+
+Read about Batch Operating System here.
+
+Q9. What are the benefits and disadvantages of a Batch Operating System?
+Answer:
+
+Advantages of Batch Operating System:
+
+Multiple users can share the batch systems
+
+Batch system’s idle time is significantly less
+
+It is easy to manage extensive work repeatedly in batch systems
+
+Disadvantages of Batch Operating System:
+
+Batch systems are hard to debug
+
+If any job fails, the other jobs will have to wait for an unknown time.
+
+Q10. What are Time-Sharing Operating Systems?
+Answer:
+
+In a time-sharing Operating System, each user gets the CPU time as they use a single system, and each task is given some time to execute so that all the tasks work smoothly. Hence, this system is also known as Multitasking Systems.
+
+The time that each task gets to execute is called quantum. After this time interval is over, the OS switches over to the next task.
+
+
