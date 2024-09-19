@@ -78,5 +78,24 @@ int main() {
     printf("\n");
 
     return 0;
+
+    /* Visualization
+     0
+    / \
+   1  2
+     / \
+    3  4
+    */
+
+   /**Example run : 
+    * Enter the number of vertices: 5
+    Enter the number of edges: 4
+    Enter the edges (format: vertex1 vertex2):
+    0 1
+    0 2
+    1 3
+    1 4
+    Depth-First Traversal starting from vertex 0: 0 2 4 3 1 
+    */
 }
 
