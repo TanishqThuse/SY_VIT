@@ -1,0 +1,5 @@
+Uninformed Search : 
+	1) BFS
+	2) DFS
+	3) BLFS 
+	4) DLFS
