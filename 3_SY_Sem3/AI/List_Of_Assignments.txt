@@ -1,5 +1,13 @@
+Informed Search : 
+	1) A*
+	2) AO*
+	3) Hill Climbing
+
+Not sure about CSP 
+
 Uninformed Search : 
 	1) BFS
 	2) DFS
 	3) BLFS 
-	4) DLFS
+	4) DLF
+
