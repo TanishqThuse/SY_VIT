@@ -95,3 +95,23 @@ int main()
     return 0;
 }
 
+/*Input : 
+Enter the number of processes: 5
+Enter the number of resources: 3
+Enter the allocation matrix (row by row):
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2
+Enter the maximum matrix (row by row):
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+Enter the available resources:
+3 3 2
+Following is the SAFE Sequence:
+ P1 -> P3 -> P4 -> P0 -> P2*/
+

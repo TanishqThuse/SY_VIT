@@ -122,3 +122,21 @@ int main() {
 
     return 0;
 }
+
+/**List of input :
+ * Enter the number of processes: 5
+Enter the number of resources: 3
+Enter available resources for 3 resources: 3 3 2
+Enter the maximum demand for each process and each resource:
+Process P0: 7 5 3
+Process P1: 3 2 2
+Process P2: 9 0 2
+Process P3: 2 2 2
+Process P4: 4 3 3
+Enter the resource request for process P0: 0 1 0
+Enter the resource request for process P1: 2 0 0
+Enter the resource request for process P2: 3 0 2
+Enter the resource request for process P3: 2 1 1
+Enter the resource request for process P4: 0 0 2
+Deadlock detected involving process P0
+ */
