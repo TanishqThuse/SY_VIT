@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define N 8 // Change N to the desired board size
+#define N 16 // Change N to the desired board size
 
 // Function to print the chessboard
 void printBoard(int board[N][N]) {
@@ -55,6 +55,11 @@ bool solveNQueens(int board[N][N], int col) {
 }
 
 int main() {
+
+    // int N = 4;
+    // printf("Enter the number of queens: ");
+    // scanf("%d", &N);
+
     int board[N][N] = {0};
 
     if (solveNQueens(board, 0))
