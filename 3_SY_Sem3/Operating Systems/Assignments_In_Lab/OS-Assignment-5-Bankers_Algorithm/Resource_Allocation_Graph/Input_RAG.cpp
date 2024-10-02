@@ -138,5 +138,6 @@ Enter the resource request for process P1: 2 0 0
 Enter the resource request for process P2: 3 0 2
 Enter the resource request for process P3: 2 1 1
 Enter the resource request for process P4: 0 0 2
-Deadlock detected involving process P0
+Deadlock detected involving process P0clear
+
  */

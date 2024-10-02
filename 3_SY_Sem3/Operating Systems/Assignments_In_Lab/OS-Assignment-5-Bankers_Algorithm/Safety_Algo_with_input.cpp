@@ -4,6 +4,9 @@ using namespace std;
 int main()
 {
     int n, m, i, j, k;
+    /*n: Number of processes.
+    m: Number of resources.
+    i, j, k: Loop control variables.*/
     
     // Input the number of processes and resources
     cout << "Enter the number of processes: ";
@@ -13,6 +16,9 @@ int main()
 
     // Declare matrices and arrays
     int alloc[n][m], max[n][m], avail[m], f[n], ans[n], ind = 0;
+
+    /**ans matrix is used to track the safe sequence */
+    //ind is to store index
 
     // Input Allocation Matrix
     cout << "Enter the allocation matrix (row by row):\n";
@@ -36,7 +42,7 @@ int main()
         cin >> avail[i];
     }
 
-    // Initialize flags array
+    // Initialize flags array ==> to check if a process is finished or not
     for (k = 0; k < n; k++) {
         f[k] = 0;
     }
@@ -73,7 +79,7 @@ int main()
         }
     }
 
-    // Check if the system is in a safe state
+    // Check if the system is in a safe state ==> by using falg variable
     int flag = 1;
     for (i = 0; i < n; i++) {
         if (f[i] == 0) {
@@ -82,6 +88,9 @@ int main()
             break;
         }
     }
+
+    /*If any process (f[i] == 0) is still not finished, the system is not in a safe state, and the message "The given sequence is not safe" is printed.*/  
+
 
     // Print the safe sequence if it exists
     if (flag == 1) {
