@@ -1,0 +1,7 @@
+[
+    { "date": "2023-09-01", "temperature": 22, "humidity": 60, "precipitation": 5 },
+    { "date": "2023-09-02", "temperature": 24, "humidity": 55, "precipitation": 0 },
+    { "date": "2023-09-03", "temperature": 20, "humidity": 70, "precipitation": 10 },
+    { "date": "2023-09-04", "temperature": 23, "humidity": 65, "precipitation": 2 },
+    { "date": "2023-09-05", "temperature": 25, "humidity": 50, "precipitation": 0 }
+]
