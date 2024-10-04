@@ -1,0 +1,176 @@
+/* * {
+  border: 1px solid pink;
+} */
+
+body {
+  font-family: "Barlow", sans-serif;
+  padding: 5px 25px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #5c39c6;
+  width: 400px;
+  margin: 10px 0;
+}
+
+h2 span {
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+.source {
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #aa39c6;
+  font-weight: 500;
+}
+
+form {
+  padding: 10px;
+}
+
+.container {
+  float: left;
+}
+
+.pieContainer {
+  width: 505px;
+  padding-left: 50px;
+}
+
+.barContainer {
+  padding-top: 280px;
+  padding-left: 10px;
+}
+
+.stackContainer {
+  margin-left: 100px;
+  overflow: visible;
+  width: 125px;
+}
+
+.stackContainer svg {
+  margin-top: 75px;
+}
+
+.wedges text,
+.barLabel {
+  fill: #291a0a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #444;
+}
+
+input {
+  margin-right: 10px;
+}
+
+svg {
+  cursor: url("paw-print.svg"), auto;
+}
+
+.info {
+  color: #291a0a;
+  position: absolute;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.pieInfo {
+  width: 130px;
+  top: 390px;
+  left: 270px;
+  text-align: center;
+}
+
+.barInfo {
+  width: 215px;
+  top: 270px;
+  left: 910px;
+  text-align: left;
+}
+
+/* (these labels are svg text, not html) */
+.stackInfo {
+  left: 500px;
+}
+
+.toolTip {
+  position: absolute;
+  height: auto;
+  color: #5c39c6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.pieTip,
+.piePlaceHolder {
+  width: 135px;
+  height: auto;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 15px 12px;
+  text-align: center;
+  top: 455px;
+  left: 255px;
+  line-height: 115%;
+}
+
+.barTip,
+.barPlaceHolder {
+  width: 240px;
+  height: auto;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  top: 345px;
+  left: 925px;
+}
+
+.placeHolder {
+  position: absolute;
+  color: #b6b2af;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.stackTip {
+  position: absolute;
+  display: none;
+  width: 55px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 2px 3px 12px #79609f;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  margin: -50px -0 0 -30px;
+}
+
+.noteInfo {
+  width: 150px;
+  font-size: 13px;
+  font-weight: 400;
+  top: 585px;
+  left: 1010px;
+  color: #666;
+}
