@@ -46,7 +46,7 @@ class BestFit {
                     int bestIdx = -1;
                     for (int j = 0; j < blockSize.length; j++) {
                         if (blockSize[j] >= processSize[i]) {
-                            if (bestIdx == -1 || blockSize[j] < blockSize[bestIdx]) {
+                            if (bestIdx == -1 || blockSize[bestIdx] > blockSize[j]) {
                                 bestIdx = j;
                             }
                         }
