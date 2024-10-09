@@ -1,0 +1,20 @@
+CP Exam : 
+
+1) CP Report -> Hardcopy on CP day
+	Next week : 
+	Can be normal report or a research paper/ieee format
+	Show_Result by image in CP Report && PPT
+
+2) Complete Implementation
+	FrontEnd
+	Backend
+	Explain/demonstrate in 2-3 minutes
+
+3) Prepare a PowerPoint Presentation
+	First -> name
+	Third -> Proble sytatement
+	Fourth -> Lietrature survey
+	5th -> Methadology, FlowChart, System Architecture
+	6th -> Result
+	7th -> COnclusion
+	8th -> References
