@@ -1,0 +1,10 @@
+HELLO WORLD!
+SI = 3  TI =0  PI=0
+TTC = 3  LLC=1
+------------------------------------------------
+
+program terminated normally
+
+SI = 3  TI =0  PI=0
+TTC = 3  LLC=1
+LC=1
