@@ -1,3 +1,0 @@
-
-SI = 3  TI = 0  PI = 0
-TTC = 0  LLC = 0
